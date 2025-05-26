@@ -117,7 +117,7 @@ public class CreateCV {
             assertTrue(createCVAction.clickButtonContinue(driver));
             Setup.testLogs.log(LogStatus.PASS,"Click button continue screen 3","");
             assertTrue(createCVAction.clickButtonContinue(driver));
-            Setup.testLogs.log(LogStatus.PASS,"Click button continue screen 3 save","");
+            Setup.testLogs.log(LogStatus.PASS,"Click button continue screen 4 save","");
 
             assertTrue(createCVAction.inputScreenStep4(driver,dataItem.get("TrinhDo").toString()));
             Setup.testLogs.log(LogStatus.PASS,"Nhập thông tin màn 4","");
@@ -129,10 +129,10 @@ public class CreateCV {
             assertTrue(createCVAction.clickButtonContinue(driver));
             Setup.testLogs.log(LogStatus.PASS,"Click button continue screen 5","");
             assertTrue(createCVAction.clickButtonContinue(driver));
-            Setup.testLogs.log(LogStatus.PASS,"Click button continue screen 5 save","");
+            Setup.testLogs.log(LogStatus.PASS,"Click button continue screen 6 save","");
 
-            assertTrue(createCVAction.clickButtonContinue(driver));
-            Setup.testLogs.log(LogStatus.PASS,"Click button continue screen 6","");
+//            assertTrue(createCVAction.clickButtonContinue(driver));
+//            Setup.testLogs.log(LogStatus.PASS,"Click button continue screen 6","");
 
             assertTrue(createCVAction.inputScreenStep7(driver,dataItem.get("KyNang").toString()));
             Setup.testLogs.log(LogStatus.PASS,"Nhập thông tin màn 7","");
@@ -144,7 +144,8 @@ public class CreateCV {
             assertTrue(createCVAction.clickButtonContinue(driver));
             Setup.testLogs.log(LogStatus.PASS,"Click button continue screen 8","");
 
-            assertTrue(createCVAction.clickButtonContinue(driver));
+            assertTrue(createCVAction.inputScreenStep9(driver));
+            assertTrue(createCVAction.clickButtonContinueDouble(driver));
             Setup.testLogs.log(LogStatus.PASS,"Click button continue screen 9","");
             Setup.pass++;
         }catch (AssertionError e){

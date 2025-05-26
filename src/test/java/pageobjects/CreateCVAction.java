@@ -2,6 +2,7 @@ package pageobjects;
 
 import Common.Constans;
 import Common.Events;
+import org.apache.poi.ss.formula.functions.Even;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -11,9 +12,9 @@ public class CreateCVAction {
     public boolean clickButtonTaoHoSo(WebDriver driver){
         boolean result = false;
         try{
-            boolean checkShow = driver.findElements(By.xpath("/html/body/div[3]/div/div[1]/div[2]/div/div/span")).size()>0;
+            boolean checkShow = driver.findElements(By.xpath("//button[@data-target='#resume-choice-modal']")).size()>0;
             if (checkShow){
-                if (Events.clickButton(driver, By.xpath("/html/body/div[3]/div/div[1]/div[2]/div/div/span"))){
+                if (Events.clickButton(driver, By.xpath("//button[@data-target='#resume-choice-modal']"))){
                     result = true;
                 }
             }
@@ -94,9 +95,27 @@ public class CreateCVAction {
     public boolean clickButtonContinue(WebDriver driver){
         boolean result = false;
         try {
-            if (Events.clickButton(driver,By.id("go-to-next"))){
+            Thread.sleep(3000);
+            if (Events.clickButtonUsingJS(driver,By.id("go-to-next"))){
                 Thread.sleep(3000);
                 result = true;
+            }
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
+        }
+        return result;
+    }
+    public boolean clickButtonContinueDouble(WebDriver driver){
+        boolean result = false;
+        try {
+            Thread.sleep(3000);
+            if (Events.clickButtonUsingJS(driver,By.id("go-to-next"))){
+                Thread.sleep(3000);
+                if (Events.clickButtonUsingJS(driver,By.id("go-to-next"))){
+                    Thread.sleep(3000);
+                    result = true;
+                }
             }
         }catch (Exception e){
             System.out.println(e.getMessage());
@@ -302,9 +321,12 @@ public class CreateCVAction {
         try{
             int count = 0;
             if (Events.inputTextField(driver, By.xpath("//*[@id=\"form_class\"]/div[1]/div/input"),viTriMongMuon)){
-                if (Events.selectComboboxByValue(driver,By.xpath("//*[@id=\"form_class\"]/div[3]/div/div/div/div[1]/select"),mucLuongMongMuon)){
+                if (Events.selectComboboxByVisibleText(driver,By.xpath("//*[@id=\"form_class\"]/div[3]/div/div/div/div[1]/select"),mucLuongMongMuon)){
                     count++;
                 }
+                Events.inputTextField(driver,By.xpath("//input[@name='salaryFrom']"),"123");
+                Events.inputTextField(driver,By.xpath("//input[@name='salaryTo']"),"111111111234");
+                Events.inputTextField(driver,By.xpath("//input[@name='recentSalary']"),"100000000");
             }
             if (count>=1){
                 if (Events.selectComboboxByValue(driver, By.xpath("//*[@id=\"form_class\"]/div[4]/div/div/select"),loaiCongViec)){
@@ -323,7 +345,11 @@ public class CreateCVAction {
             if (count>=3){
                 if (Events.clickButton(driver,By.xpath("//*[@id=\"form_class\"]/div[7]/div/div/div/div[1]/div/button"))){
                     if (Events.clickButton(driver,By.xpath("//*[@id=\"form_class\"]/div[7]/div/div/div/div[1]/div/div/div[1]"))){
-                        count++;
+                        if (Events.clickButton(driver,By.xpath("//*[@id=\"form_class\"]/div[7]/div/div/div/div[2]/div/button"))){
+                            if (Events.clickButton(driver,By.xpath("//*[@id=\"form_class\"]/div[7]/div/div/div/div[2]/div/div/div[1]"))){
+                                count++;
+                            }
+                        }
                     }
                 }
             }
@@ -335,6 +361,7 @@ public class CreateCVAction {
                     WebElement Element = driver.findElement(By.xpath("//*[@id=\"form_class\"]/div[10]/div/div/label[2]/div"));
                     // Scrolling down the page till the element is found
                     js.executeScript("arguments[0].scrollIntoView();", Element);
+                    Thread.sleep(3000);
                     if (Events.clickButton(driver,By.xpath("//*[@id=\"form_class\"]/div[9]/div/div/label[2]/div"))){
                         if (Events.clickButton(driver,By.xpath("//*[@id=\"form_class\"]/div[10]/div/div/label[2]/div"))){
                             count++;
@@ -352,5 +379,17 @@ public class CreateCVAction {
         return result;
     }
     // bước 9 ko cần thực hiện ấn tiếp tục luôn
+    public boolean inputScreenStep9(WebDriver driver){
+        boolean result = false;
+        try{
+            if (Events.clickButton(driver, By.xpath("/html/body/div[2]/div[2]/div/div/form/div[3]/label/div"))){
+                result = true;
+            }
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
+        }
+        return result;
+    }
 
 }
