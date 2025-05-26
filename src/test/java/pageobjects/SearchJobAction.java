@@ -20,7 +20,7 @@ public class SearchJobAction {
                 result = true;
             }
         } catch (Exception e) {
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
             System.out.println(e.getMessage());
         }
         return result;
@@ -44,7 +44,7 @@ public class SearchJobAction {
                 }
             }
         } catch (Exception e) {
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
             System.out.println(e.getMessage());
         }
         return result;
@@ -57,7 +57,7 @@ public class SearchJobAction {
                 result = true;
             }
         } catch (Exception e) {
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
             System.out.println(e.getMessage());
         }
         return result;
@@ -71,7 +71,7 @@ public class SearchJobAction {
                 result = true;
             }
         } catch (Exception e) {
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
             System.out.println(e.getMessage());
         }
         return result;
@@ -87,7 +87,7 @@ public class SearchJobAction {
                 result = true;
             }
         } catch (Exception e) {
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
             System.out.println(e.getMessage());
         }
         return result;

@@ -14,7 +14,7 @@ public class CheckDescriptionAction {
             }
         }catch (Exception e){
             System.out.println(e.getMessage());
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
         }
         return result;
     }

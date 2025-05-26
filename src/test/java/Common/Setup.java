@@ -205,7 +205,7 @@ public class Setup {
                 extent.endTest(testLogs);
                 extent.flush();
                 // kiểm tra xem có lỗi không để ghi log
-                if (!StringUtils.isBlank(Constans.errorLog)) {
+                if (!StringUtils.isBlank(Constans.errorLog.toString())) {
                     testLogs.log(LogStatus.FAIL, Constans.errorLog.toString(),"");
                 }
                 driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);

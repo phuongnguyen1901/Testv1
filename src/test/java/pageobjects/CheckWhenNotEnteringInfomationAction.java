@@ -14,7 +14,7 @@ public class CheckWhenNotEnteringInfomationAction {
             }
         }catch (Exception e){
             System.out.println(e.getMessage());
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
         }
         return result;
     }
@@ -29,7 +29,7 @@ public class CheckWhenNotEnteringInfomationAction {
             }
         }catch (Exception e){
             System.out.println(e.getMessage());
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
         }
         return result;
     }
@@ -44,7 +44,7 @@ public class CheckWhenNotEnteringInfomationAction {
             }
         }catch (Exception e){
             System.out.println(e.getMessage());
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
         }
         return result;
     }
@@ -56,7 +56,7 @@ public class CheckWhenNotEnteringInfomationAction {
             }
         }catch (Exception e){
             System.out.println(e.getMessage());
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
         }
         return result;
     }
@@ -68,7 +68,7 @@ public class CheckWhenNotEnteringInfomationAction {
             }
         }catch (Exception e){
             System.out.println(e.getMessage());
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
         }
         return result;
     }
@@ -81,8 +81,7 @@ public class CheckWhenNotEnteringInfomationAction {
                 return true;
             }
         }catch (Exception e){
-            System.out.println(e.getMessage());
-            Constans.errorLog.concat(e.getMessage());
+            System.out.println(Constans.errorLog.append(e.getMessage()));
         }
         return result;
     }
@@ -94,7 +93,7 @@ public class CheckWhenNotEnteringInfomationAction {
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
         }
         return result;
     }

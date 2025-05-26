@@ -14,7 +14,7 @@ public class LoginAction {
                 return true;
             }
         }catch (Exception e){
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
             System.out.println(e.getMessage());
         }
         return result;
@@ -28,7 +28,7 @@ public class LoginAction {
             Events.clickButton(driver,By.xpath("//*[@id=\"login_submit\"]"));
             result = true;
         }catch (Exception e){
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
             System.out.println(e.getMessage());
         }
         return result;
@@ -40,7 +40,7 @@ public class LoginAction {
             Events.inputTextField(driver,By.xpath("//input[@name='_password']"),password);
             result = true;
         }catch (Exception e){
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
             System.out.println(e.getMessage());
         }
         return result;
@@ -54,7 +54,7 @@ public class LoginAction {
                 result = true;
             }
         }catch (Exception e){
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
             System.out.println(e.getMessage());
         }
         return result;
@@ -70,7 +70,7 @@ public class LoginAction {
             }
         }catch (Exception e){
             System.out.println(e.getMessage());
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
         }
         return  result;
     }
@@ -88,7 +88,7 @@ public class LoginAction {
             }
         }catch (Exception e){
             System.out.println(e.getMessage());
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
         }
         return  result;
     }
@@ -102,7 +102,7 @@ public class LoginAction {
             }
         }catch (Exception e){
             System.out.println(e.getMessage());
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
         }
         return result;
     }
@@ -118,7 +118,7 @@ public class LoginAction {
             }
         }catch (Exception e){
             System.out.println(e.getMessage());
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
         }
         return resutl;
     }
@@ -132,7 +132,7 @@ public class LoginAction {
 
         }catch (Exception e){
             System.out.println(e.getMessage());
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
         }
         return resutl;
     }
@@ -145,7 +145,7 @@ public class LoginAction {
             }
         }catch (Exception e){
             System.out.println(e.getMessage());
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
         }
         return resutl;
     }
@@ -157,7 +157,7 @@ public class LoginAction {
             }
         }catch (Exception e){
             System.out.println(e.getMessage());
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
         }
         return resutl;
     }

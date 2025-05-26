@@ -14,7 +14,7 @@ public class Constans {
     public static final int TIME_WAITING = 30;
     public static final String folderImgReport = "imgReport/";
     public static final String folderVideoReport = "videoReport/";
-    public static String errorLog = "";
+    public static StringBuilder errorLog = new StringBuilder("");
     public static String getCurrentDateTime(String format) {
         SimpleDateFormat sdf = new SimpleDateFormat(format);
         Date timenow = new Date();

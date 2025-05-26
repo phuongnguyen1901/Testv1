@@ -28,7 +28,7 @@ public class Events {
                 Setup.testLogs.log(LogStatus.INFO, Setup.testLogs.addScreenCapture(imgPath),"");
             }
         }catch (Exception e){
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
             System.out.println(e.getMessage());
         }
 
@@ -48,7 +48,7 @@ public class Events {
                 Setup.testLogs.log(LogStatus.INFO, Setup.testLogs.addScreenCapture(imgPath),"");
             }
         }catch (Exception e){
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
             System.out.println(e.getMessage());
         }
     }
@@ -60,7 +60,7 @@ public class Events {
             btnClick.click();
             click = true;
         } catch (Exception e) {
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
             // TODO: handle exception
             System.err.println(e.getMessage());
         }
@@ -75,7 +75,7 @@ public class Events {
             textField.sendKeys(valueInput);
             input = true;
         } catch (Exception e) {
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
             // TODO: handle exception
             System.err.println(e.getMessage());
         }
@@ -90,7 +90,7 @@ public class Events {
             selectCombobox.selectByValue(valueSelect);
             check = true;
         } catch (Exception e) {
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
             // TODO: handle exception
             System.err.println(e.getMessage());
         }
@@ -105,7 +105,7 @@ public class Events {
             selectCombobox.selectByIndex(valueIndex);
             check = true;
         } catch (Exception e) {
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
             // TODO: handle exception
             System.err.println(e.getMessage());
         }
@@ -120,7 +120,7 @@ public class Events {
             selectCombobox.selectByVisibleText(visibleText);
             check = true;
         } catch (Exception e) {
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
             // TODO: handle exception
             System.err.println(e.getMessage());
         }
@@ -135,7 +135,7 @@ public class Events {
                 check = true;
             }
         } catch (Exception e) {
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
             // TODO: handle exception
             System.err.println(e.getMessage());
         }
@@ -150,7 +150,7 @@ public class Events {
                 allOption.add(o.getAttribute("value"));
             });
         } catch (Exception e) {
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
             // TODO: handle exception
             System.err.println(e.getMessage());
         }
@@ -174,7 +174,7 @@ public class Events {
             }
 
         } catch (Exception e) {
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
             // TODO: handle exception
             System.err.println(e.getMessage());
         }
@@ -189,7 +189,7 @@ public class Events {
             result = true;
 
         } catch (Exception e) {
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
             // TODO: handle exception
             System.err.println(e.getMessage());
         }
@@ -202,7 +202,7 @@ public class Events {
             Actions action = new Actions(driver);
             action.moveToElement(element).build().perform();
         }catch (Exception e){
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
             System.out.println(e.getMessage());
         }
         return result;
@@ -220,7 +220,7 @@ public class Events {
                 return true;
             }
         }catch (Exception e){
-            Constans.errorLog.concat(e.getMessage());
+            Constans.errorLog.append(e.getMessage());
             System.out.println(e.getMessage());
         }
         return result;
