@@ -1,0 +1,452 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "Given login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2025-05-25T16:42:48.989Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.BeforeScenario()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "login_1",
+        "description": "",
+        "id": "check-login;login-1",
+        "after": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.AfterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12230000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Kiểm tra màn hình bao gồm các thông tin",
+            "match": {
+              "location": "stepDefinitions.Login.checkItemInLoginPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "Given login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2025-05-25T16:43:01.614Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.BeforeScenario()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "login_2",
+        "description": "",
+        "id": "check-login;login-2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.AfterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5525000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Nhập thông tin email hợp lệ và nhập password hợp lệ và  Click button Đăng nhập",
+            "match": {
+              "location": "stepDefinitions.Login.checkLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1991000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Đăng nhập thành công, hiển thị màn hình home",
+            "match": {
+              "location": "stepDefinitions.Login.checkLoginSuccess()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "Given login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2025-05-25T16:43:09.221Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.BeforeScenario()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "login_3",
+        "description": "",
+        "id": "check-login;login-3",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.AfterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4269000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Nhập password",
+            "match": {
+              "location": "stepDefinitions.LoginValidate.checkItemInLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2072000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Click button Hiển thị mật khẩu và Hiển thị mật khẩu đã nhập",
+            "match": {
+              "location": "stepDefinitions.LoginValidate.checkLoginValidatePage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "Given login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2025-05-25T16:43:15.625Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.BeforeScenario()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "login_4",
+        "description": "",
+        "id": "check-login;login-4",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.AfterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4377000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Nhập email không tồn tại và nhập password hợp lệ và Click button đăng nhập",
+            "match": {
+              "location": "stepDefinitions.LoginValidate.checkLoginSuccess()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1131000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Hiển thị thông báo lỗi : E-mail hoặc mật khẩu bị sai. Vui lòng đăng nhập lại",
+            "match": {
+              "location": "stepDefinitions.LoginValidate.checkMessageError()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "Given login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2025-05-25T16:43:21.207Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.BeforeScenario()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "login_5",
+        "description": "",
+        "id": "check-login;login-5",
+        "after": [
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.AfterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3706000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Nhập email tồn tại và nhập password không hợp lệ và Click button đăng nhập page",
+            "match": {
+              "location": "stepDefinitions.LoginValidate.inputLoginPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1416000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "E-mail hoặc mật khẩu bị sai. Vui lòng đăng nhập lại",
+            "match": {
+              "location": "stepDefinitions.LoginValidate.checkError()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "Given login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2025-05-25T16:43:26.456Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.BeforeScenario()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "login_6",
+        "description": "",
+        "id": "check-login;login-6",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.AfterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9923000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Click button Quên mật khẩu",
+            "match": {
+              "location": "stepDefinitions.LoginValidate.clickButtonQuenMatKhau()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1117000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Hiển thị màn hình quên mật khẩu",
+            "match": {
+              "location": "stepDefinitions.LoginValidate.checkQuenMKPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "Given login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2025-05-25T16:43:37.569Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.BeforeScenario()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "login_7",
+        "description": "",
+        "id": "check-login;login-7",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.AfterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3469000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Click button Đăng kí",
+            "match": {
+              "location": "stepDefinitions.LoginValidate.clickButtonDangKy()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1072000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Hiển thị màn hình đăng kí",
+            "match": {
+              "location": "stepDefinitions.LoginValidate.checkDangKyPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Check login",
+    "description": "",
+    "id": "check-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Careelink/CoverLetter/login.feature",
+    "tags": []
+  }
+]

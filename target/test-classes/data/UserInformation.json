@@ -1,0 +1,118 @@
+{
+  "ThongTinCaNhan": {
+    "TieuDeHoSo": "Test",
+    "HoVaTen": "Lê Thị Phương",
+    "QuocTich": "Việt Nam",
+    "NgaySinh": "13",
+    "ThangSinh": "Tháng 1",
+    "NamSinh": "2000",
+    "TinhTrangHonNhan": true,
+    "GioiTinh": false
+  },
+  "ThongTinLienHe": {
+    "DienThoai": "0886699213",
+    "Email": "phuonglethi1901@gmail.com",
+    "QuocGia": "Viet Nam",
+    "Tinh": "Hà Nội",
+    "QuanHuyen": "Quận Cầu Giấy",
+    "Duong": "Trần cung",
+    "ChuyenMon": "Công nghệ thông tin",
+    "ThangBD": "Tháng 8",
+    "NamBD": "2018",
+    "ThangKT": "Tháng 7",
+    "NamKT": "2022",
+    "NgoaiNgu": "Tiếng Anh",
+    "TrinhDo": "Sơ cấp",
+    "SoNam": 1,
+    "TenCongTy": "Teracom",
+    "ChucDanh": "Fresher",
+    "NganhNghe": "CNTT - Phần mềm",
+    "MoTa" : "Goodluck",
+    "KyNang": "Giao tiếp",
+    "ViTriMongMuon": "PM",
+    "LuongGanNhat": 500,
+    "TienTe": "USD",
+    "LoaiLuong": "Nhập",
+    "Tu": 1000,
+    "Den": 3000,
+    "LoaiCongViec": "Nhân viên toàn thời gian",
+    "CapBacMongMuon": "Quản lý / Trưởng phòng",
+    "NganhNgheMongMuon": "CNTT - Phần mềm",
+    "NoiLamViecUaThich": "Hà Nội",
+    "MucTieuNgheNghiep": "Lương cao",
+    "ThayDoiChoO": true,
+    "DiCongTac": true
+  },
+  "HocVan": {
+    "TrinhDoHocVan": "Kỹ sư",
+    "TenTruong": "ĐH Giao Thông Vận tải",
+    "ChuyenMon": "Công nghệ thông tin",
+    "NgayBatDau": {
+      "Thang": "Tháng 8",
+      "Nam": "2018"
+    },
+    "NgayKetThuc": {
+      "Thang": "Tháng 7",
+      "Nam": "2022"
+    },
+    "QuaTrinhHocVan": "Tot"
+  },
+  "NgoaiNgu": [
+    {
+      "NgoaiNgu": "Tiếng Anh",
+      "TrinhDo": "Khá"
+    },
+    {
+      "NgoaiNgu": "Tiếng Pháp",
+      "TrinhDo": "Không có"
+    }
+  ],
+  "KinhNghiemLamViec": {
+    "SoNam": 1,
+    "TenCongTy": "Teracom",
+    "ChucDanh": "Fresher",
+    "NganhNghe": "CNTT - Phần mềm",
+    "NgayBatDau": {
+      "Thang": "Tháng 11",
+      "Nam": "2020"
+    },
+    "NgayKetThuc": {
+      "Thang": "Tháng 6",
+      "Nam":"2022"
+    },
+    "CongViecHienTai": true,
+    "MoTa":"Fresher Tester"
+  },
+  "NguoiThamKhao": {
+
+  },
+  "KyNang": [{
+    "KyNang": "Giao tiếp",
+    "TrinhDo": "3"
+  },
+    {
+      "KyNang": "Quản lý dự án",
+      "TrinhDo": "3"
+    }
+  ],
+  "MucTieuNgheNghiep": {
+    "ViTriMongMuon": "Quản lý dự án",
+    "MucLuongGanNhat": {
+      "Luong": 500,
+      "TienTe": "USD"
+    },
+    "MucLuongMongMuon": {
+      "Kieu": "Nhap",
+      "Tu": 1000,
+      "Den": 3000,
+      "TienTe": "USD"
+    },
+    "LoaiCongViec": "Nhân viên toàn thời gian",
+    "CapBacMongMuon": "Quản lý / Trưởng phòng",
+    "NganhNgheMongMuon": "CNTT - Phần mềm",
+    "NoiLamViecUaThich": "Hà Nội",
+    "MucTieuNgheNghiep": "Lương cao",
+    "ThayDoiChoO": true,
+    "DiCongTac": true
+  }
+}
